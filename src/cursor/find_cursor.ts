@@ -1,4 +1,4 @@
-import { Collection } from "src/collection";
+import { Collection } from "../collection";
 
 
 export class Find {
