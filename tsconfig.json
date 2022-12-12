@@ -16,6 +16,6 @@
     "outDir": "./dist",
     "rootDir":"./src"
   },
-  "include": ["src/**/*.ts", "webpack.config.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/__tests__/*.ts"]
 }

@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Natthaphat Piasangka <n.devs260340@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.config.ts",
+    "tsc": "tsc"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
