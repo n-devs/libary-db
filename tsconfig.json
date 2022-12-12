@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "es6",
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "node",
@@ -12,10 +12,11 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noImplicitAny": true,
     "baseUrl": ".",
     "outDir": "./dist",
     "rootDir":"./src"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/__tests__/*.ts"]
+  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/__tests__/*.ts", "dist/**/*"]
 }

@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Find = void 0;
 var Find = /** @class */ (function () {
     function Find(collection, filter) {
         this.collection = collection;
@@ -16,5 +13,5 @@ var Find = /** @class */ (function () {
     }
     return Find;
 }());
-exports.Find = Find;
+export { Find };
 //# sourceMappingURL=find_cursor.js.map

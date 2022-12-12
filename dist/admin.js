@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Admin = void 0;
 var Admin = /** @class */ (function () {
     function Admin(db) {
         this.db = db;
@@ -15,5 +12,5 @@ var Admin = /** @class */ (function () {
     };
     return Admin;
 }());
-exports.Admin = Admin;
+export { Admin };
 //# sourceMappingURL=admin.js.map

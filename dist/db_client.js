@@ -1,12 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Client = void 0;
-var socket_io_client_1 = require("socket.io-client");
-var db_1 = require("./db");
+import { io } from "socket.io-client";
+import { Db } from "./db";
 var Client = /** @class */ (function () {
     function Client(url, db) {
         this.url = url;
-        this.socket = (0, socket_io_client_1.io)(url, {
+        this.socket = io(url, {
             auth: {
                 url: db.url,
                 options: db.options
@@ -30,10 +27,10 @@ var Client = /** @class */ (function () {
         });
     };
     Client.prototype.db = function (dbName) {
-        var db = new db_1.Db(this, dbName);
+        var db = new Db(this, dbName);
         return db;
     };
     return Client;
 }());
-exports.Client = Client;
+export { Client };
 //# sourceMappingURL=db_client.js.map

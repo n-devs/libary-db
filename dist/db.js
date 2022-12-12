@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Db = void 0;
-var admin_1 = require("./admin");
-var collection_1 = require("./collection");
+import { Admin } from "./admin";
+import { Collection } from "./collection";
 var Db = /** @class */ (function () {
     // databaseName: string;
     // name: string;
@@ -11,11 +8,11 @@ var Db = /** @class */ (function () {
         this.client.socket.emit("use db", databaseName);
     }
     Db.prototype.collection = function (name) {
-        var collection = new collection_1.Collection(this, name);
+        var collection = new Collection(this, name);
         return collection;
     };
     Db.prototype.admin = function () {
-        var admin = new admin_1.Admin(this);
+        var admin = new Admin(this);
         return admin;
     };
     Db.prototype.listCollections = function () {
@@ -25,5 +22,5 @@ var Db = /** @class */ (function () {
     };
     return Db;
 }());
-exports.Db = Db;
+export { Db };
 //# sourceMappingURL=db.js.map
